@@ -6,7 +6,11 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'home.html'
 })
 export class HomePage {
+  title = 'Tour of Heroes';
 
+  heroes = ['Windstorm', 'Bombasto', 'Magneta', 'Tornado'];
+
+  myHero = this.heroes[3];
   constructor(public navCtrl: NavController) {
 
   }
